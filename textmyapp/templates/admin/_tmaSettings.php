@@ -11,7 +11,7 @@
 						<form id="idtsettings" action="" method="POST">
 							<div class="left">
 								<div>
-									<label for="twilio-number">App URL: </label><br/>
+									<label for="url">App URL: </label><br/>
 									<input type="text" name="url" id="app-url" value="<?php echo (isset($url) ? $url : "Enter App URL"); ?>" onfocus="if(this.value == 'Enter App URL') {this.value = ''; }" onblur="if(this.value == '') {this.value = 'Enter App URL'}"/>
 								</div>
 								<div>
