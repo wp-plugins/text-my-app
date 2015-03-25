@@ -1,7 +1,7 @@
 <?php
 add_shortcode('tma_input', 'tma_input');
 
-function tma_input() {
+function tma_input($args) {
 	if (isset($_POST['input-submit'])) {
 		$options = get_option('tma_settings');
 		if ($options) {
@@ -14,9 +14,19 @@ function tma_input() {
 				$AccountSid = $options['sid'];
 				$AuthToken = $options['token'];
 			}
-			$url = $options['url'];
+			// Check if url is coming in argument, else use default url
+			if (!empty($args) && isset($args['url']) && !empty($args['url'])) {
+				$url = $args['url'];
+			} else {
+				$url = $options['url'];
+			}
 			$number = $options['number'];
-			$message = html_entity_decode(stripslashes($options['message']));
+			// Checking if message is coming in argument, else use default message
+			if (!empty($args) && isset($args['message']) && !empty($args['message'])) {
+				$message = html_entity_decode(stripslashes($args['message']));
+			} else {
+				$message = html_entity_decode(stripslashes($options['message']));
+			}
 
 			$number_one = $_POST['tma-input-1'];
 			$number_two = $_POST['tma-input-2'];

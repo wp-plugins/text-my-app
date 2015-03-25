@@ -7,7 +7,8 @@
 					<h3 class="hndle"><span>Plugin Settings</span></h3>
 					<div class="inside">
 						<p>To use this plugin, visit <a href="http://twilio.com" target="_blank">Twilio</a> and sign up for a free account.</p>
-						<p>Enter shortcode <span class="shortcode">[tma_input]</span> on any post or page.
+						<p>Enter shortcode <span class="shortcode">[tma_input]</span> on any post or page.</p>
+						<p>Use arguments URL or MESSAGE to pass in the shortcode for custom App URL and Message<br/> <span class="shortcode">[tma_input url="http://example.com/app" message="Hello World!"]</span></p>
 						<form id="idtsettings" action="" method="POST">
 							<div class="left">
 								<div>
