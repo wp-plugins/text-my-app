@@ -27,3 +27,13 @@ e.g.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Register for a Twilio account (http://twilio.com) and complete the fields in the settings screen
 4. Add shortcode [tma_input] to any post or page
+
+== Changelog ==
+
+= 1.0.1 =
+
+* Add option to customize URL and message on a per shortcode basis. Thanks to Gegory Wexler for the donation!
+
+= 1.0 =
+
+* Initial Release
