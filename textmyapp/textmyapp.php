@@ -7,7 +7,7 @@
 Plugin Name: Text My App
 URI: http://VirtuousGiant.com
 Description: Send SMS download links to your customer's cellular devices
-Version: 1.0
+Version: 1.0.1
 Author: Virtuous Giant
 Author URI: http://VirtuousGiant.com
 License: GPL2
@@ -17,7 +17,7 @@ License: GPL2
 register_activation_hook(__FILE__,'tma_install');
 
 global $tma_db_version;
-$tma_db_version = "1.0";
+$tma_db_version = "1.0.1";
 $tma_installed_ver = get_option( "tma_db_version" );
 
 function tma_install () {
